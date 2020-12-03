@@ -1,0 +1,1 @@
+web: gunicorn django.src.social-network.bffbook.wsgi --log-file -
