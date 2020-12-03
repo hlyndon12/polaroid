@@ -18,7 +18,7 @@ my profile
       <img src="{{profile.avatar.url}}">
     </div>
     <div class="description">
-      <div class="ui header">Provide some additional/newest info about you </div>
+      <div class="ui header">Provide some additional/newest info about you {{profile.avatar.url}}</div>
      <form action="" method="POST" class="ui form" enctype='multipart/form-data'>
         {% csrf_token %}
         {{form.as_p}}
